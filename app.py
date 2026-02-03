@@ -48,7 +48,7 @@ if prompt := st.chat_input("Diz-me o nome do teu curso..."):
     # Resposta da Dra. Rosa
     with st.chat_message("assistant", avatar="👩🏾‍🔬"):
         try:
-            model = genai.GenerativeModel('models/gemini-1.5-flash', system_instruction=system_prompt)
+            model = genai.GenerativeModel('models/gemini-2.0-flash', system_instruction=system_prompt)
             
             # Gerar resposta
             response = model.generate_content(prompt)
