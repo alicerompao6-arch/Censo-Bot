@@ -16,8 +16,8 @@ if "GOOGLE_API_KEY" not in st.secrets:
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # 3. Cabeçalho Oficial
-st.markdown("<h1 style='text-align: center;'>🇸🇹 I Censo Científico Nacional de São Tomé e Príncipe</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Preencha o formulário abaixo. Se tiver dúvidas sobre a sua área científica, fale com a Dra. Rosa à direita.</p>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>I Censo Científico Nacional de São Tomé e Príncipe</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'> Preencha o formulário abaixo. Se tiver dúvidas sobre a sua área científica, fale com a Dra. Rosa à direita.</p>", unsafe_allow_html=True)
 st.write("---")
 
 # 4. Divisão do Ecrã em Duas Colunas
@@ -28,7 +28,7 @@ col_form, col_bot = st.columns([3, 2], gap="large")
 with col_form:
     st.subheader("📝 Formulário do Inquérito")
     # SUBSTITUA o link abaixo pelo link real do seu formulário (Google Forms, etc.)
-    url_formulario = "https://docs.google.com/forms/d/e/SUA_ID_AQUI/viewform?embedded=true"
+    url_formulario = "https://forms.gle/5vJu6dDBiN2o81qP8"
     
     # Este código "incorpora" o formulário dentro do site
     st.components.v1.iframe(url_formulario, height=800, scrolling=True)
